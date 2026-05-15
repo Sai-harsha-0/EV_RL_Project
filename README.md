@@ -26,4 +26,4 @@ python train.py
 If deployed in real world:
 - Monitor waiting time
 - Monitor queue length
-- Monitor power utilization
+- Monitor power utilization 
