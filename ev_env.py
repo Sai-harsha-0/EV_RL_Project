@@ -15,7 +15,6 @@ class EVChargingEnv:
 
         reward = 0
 
-        # Allocate EV
         if self.slots[action] > 0:
             self.slots[action] -= 1
             reward += 20
@@ -23,10 +22,8 @@ class EVChargingEnv:
             self.queue[action] += 1
             reward -= 15
 
-        # Queue penalty
         reward -= sum(self.queue)
 
-        # Simulate charging completion
         for i in range(self.n_stations):
             if random.random() < 0.3:
                 if self.queue[i] > 0:
@@ -36,4 +33,8 @@ class EVChargingEnv:
 
         next_state = tuple(self.slots + self.queue)
 
-        return next_state, reward, False
+        done = False
+        if sum(self.queue) > 20:
+            done = True
+
+        return next_state, reward, done
