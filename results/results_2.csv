@@ -1,2 +1,2 @@
 run_id,episodes,avg_reward_rl,avg_reward_random,avg_queue_rl,avg_queue_random,epsilon_final,learning_rate,discount_factor
-exp1,500,267.26,-167.388,1.90448,3.63616,0.08157186144027828,0.2,0.95
+exp1,500,283.116,-138.862,1.8197599999999998,3.50508,0.08157186144027828,0.2,0.95

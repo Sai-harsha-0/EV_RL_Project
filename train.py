@@ -116,7 +116,7 @@ df = pd.DataFrame(results)
 os.makedirs("results", exist_ok=True)
 os.makedirs("graphs", exist_ok=True)
 
-df.to_csv("results/results_1.csv", index=False)
+df.to_csv("results/results_2.csv", index=False)
 
 print("Results CSV Saved!")
 
