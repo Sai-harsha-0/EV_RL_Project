@@ -10,7 +10,7 @@ class QLearningAgent:
 
         self.alpha = alpha
         self.gamma = gamma
-        self.epsilon = epsilon
+        self.epsilon = epsilon 
 
     def get_q(self, state, action):
         return self.q_table.get((state, action), 0)
