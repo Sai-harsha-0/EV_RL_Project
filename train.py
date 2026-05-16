@@ -44,6 +44,7 @@ for ep in range(episodes):
     total_queue = 0
 
     for step in range(50):
+        
 
         action = agent.choose_action(state)
 
